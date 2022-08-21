@@ -119,14 +119,15 @@ let nameCity = document.querySelector("#city");
 nameCity.value = "Москва";
 document.addEventListener("DOMContentLoaded", showWeather)
 
-
 function openSearch() {
     this.hidden = true;
     form.hidden = false;
+    nameCity.focus();
 }
 hidbtn.addEventListener("click", openSearch)
 
 function showWeather() {
+    if (!nameCity.value) return;
     document.querySelector(".dateweather").hidden = false;
     form.hidden = true;
     hidbtn.hidden = false;
@@ -148,6 +149,11 @@ function clearInput() {
     this.value = "";
 }
 nameCity.addEventListener("focus", clearInput);
+
+function blockEnter(event) {
+    if (event.code == "Enter") event.preventDefault();
+}
+nameCity.addEventListener("keydown", blockEnter)
 
 
 function showInfoDay(event) {
