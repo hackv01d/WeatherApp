@@ -185,9 +185,10 @@ body {
         margin-left: -10px;
     }
     .fivedays div {
-        width: 95px;
-        
+        width: 95px;   
     }
-
-
+    .search {
+        right: 15%;
+        top: 2%;
+    }
 }
