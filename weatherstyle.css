@@ -16,7 +16,10 @@ body {
     width: 90%;
     height: 550px;
     position: relative;
-    background: url('https://images.wallpaperscraft.ru/image/single/ozero_lodka_vid_sverhu_130734_800x600.jpg');
+    background: url('https://images.wallpaperscraft.ru/image/single/ozero_lodka_vid_sverhu_130734_2560x1600.jpg');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeats;
 }
 
 .search {
@@ -108,7 +111,6 @@ body {
     height: 150px;
     position: relative;
     text-align: center;
-
 }
 
 .daytime {
@@ -166,5 +168,26 @@ body {
 
 .fivedays div:hover {
     box-shadow: 0 0px 5px 2px rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 750px) {
+    .title {
+        width: 100%;
+    }
+    .day div {
+        border-radius:15px;
+        width: 80px;
+    }
+    .daytime {
+        left: 20%;
+    }
+    .day img {
+        margin-left: -10px;
+    }
+    .fivedays div {
+        width: 95px;
+        
+    }
+
 
 }
