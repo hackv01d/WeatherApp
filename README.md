@@ -1,3 +1,3 @@
 # WeatherApp
 
-[WeatherApp(pet-project)] (https://ivantomsk.github.io/WeatherApp/)
+[WeatherApp - pet-project](https://ivantomsk.github.io/WeatherApp/)
